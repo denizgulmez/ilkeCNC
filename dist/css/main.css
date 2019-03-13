@@ -1,3 +1,67 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  background: #444;
-  color: #fff; }
+  background: #fff;
+  color: #444;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 50px; }
+
+h1 {
+  font-size: 3rem; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+main {
+  padding: 4rem;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; }
+  main .logo {
+    padding-top: 25px;
+    padding-bottom: 50px; }
+    main .logo img {
+      width: 500px;
+      border-radius: 20px; }
+  main .phone i {
+    color: green; }
+  main .email i {
+    color: #3a9fc0; }
+  main .address i {
+    color: orangered; }
+
+@media screen and (max-width: 767px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1rem;
+    padding-bottom: 10px; }
+  main {
+    padding: 2rem;
+    padding-top: 8vh; }
+    main .logo {
+      padding-top: 10px;
+      padding-bottom: 20px; }
+      main .logo img {
+        width: 200px;
+        border-radius: 10px; }
+    main i {
+      font-size: 24px; } }
