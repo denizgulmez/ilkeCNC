@@ -3,29 +3,4 @@
 }
 
 @include mediaSm {
-  h1,
-  h2,
-  h3 {
-    font-size: 1rem;
-    padding-bottom: 10px;
-  }
-
-  main {
-    padding: 2rem;
-    padding-top: 8vh;
-
-    .logo {
-      padding-top: 10px;
-      padding-bottom: 20px;
-
-      img {
-        width: 200px;
-        border-radius: 10px;
-      }
-    }
-
-    i {
-      font-size: 24px;
-    }
-  }
 }

@@ -1,0 +1,52 @@
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $secondary-color;
+  color: $color-3;
+  padding-top: 75px;
+  margin-bottom: 0;
+  position: fixed;
+
+  display: grid;
+  grid-template-columns: 500px auto 500px;
+  grid-template-rows: auto;
+
+  .about {
+    grid-area: about;
+    padding-right: 30%;
+  }
+
+  .logo {
+    grid-area: logo;
+    justify-self: center;
+
+    img {
+      width: 400px;
+    }
+  }
+
+  .contact {
+    grid-area: contact;
+    padding-left: 30%;
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 50px auto;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    justify-self: center;
+    align-self: center;
+    padding-top: 10px;
+  }
+
+  grid-template-areas:
+    "contact logo about"
+    "copyright copyright copyright";
+
+  h4 {
+    font-weight: 500;
+  }
+}

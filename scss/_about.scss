@@ -1,0 +1,40 @@
+#about {
+  .topping {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/imgSlide1.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .liveArea {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    .nav {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 100px 100px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: $secondary-color;
+      border-radius: 10px;
+      width: 300px;
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding: 20px 10px;
+        border-style: solid;
+        border-width: 0 0 2px 0;
+        border-color: $secondary-color;
+
+        &.bottom {
+          border-width: 0;
+        }
+      }
+    }
+  }
+}

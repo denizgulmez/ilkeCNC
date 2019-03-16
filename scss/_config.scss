@@ -1,3 +1,13 @@
+$primary-color: #fcfff5;
+$secondary-color: #3e606f;
+$color-3: #d1dbbd;
+$color-4: #023859;
+$color-5: #f25652;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
 @mixin mediaXl {
   @media screen and (min-width: 768px) {
     @content;
