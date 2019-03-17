@@ -2,6 +2,8 @@
 @import "header";
 @import "footer";
 @import "about";
+@import "services";
+@import "contact";
 
 * {
   box-sizing: border-box;
@@ -20,6 +22,7 @@ main {
   #slide {
     .imgSlide {
       width: 100%;
+      padding-top: 50px;
     }
   }
 
@@ -28,7 +31,7 @@ main {
     padding-bottom: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 100px;
+    grid-column-gap: 50px;
 
     .slogan {
       grid-area: slogan;
@@ -36,7 +39,7 @@ main {
       padding-bottom: 50px;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 600;
       }
     }
@@ -59,19 +62,23 @@ main {
 
     #card {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 2fr;
 
       i {
         padding-top: 50px;
+        padding-right: 30px;
+        font-size: 3rem;
+        justify-self: end;
       }
 
       h2 {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         font-weight: 700;
       }
 
       h3 {
         font-weight: 500;
+        font-size: 1rem;
       }
     }
   }
@@ -81,7 +88,7 @@ main {
     padding-left: 50px;
 
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 500;
     }
   }
@@ -96,6 +103,12 @@ main {
       img {
         width: 80%;
       }
+    }
+
+    &.bottom {
+      border-style: solid;
+      border-width: 0 0 1px 0;
+      border-color: $primary-color;
     }
   }
 
@@ -113,16 +126,16 @@ main {
 
     .info {
       grid-area: info;
-      padding-left: 200px;
+      padding-left: 100px;
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 450;
         padding-right: 200px;
       }
 
       .button {
-        padding: 20px;
+        padding: 30px;
 
         a {
           padding: 15px 30px;
@@ -141,20 +154,20 @@ main {
         grid-area: headingSm;
 
         h2 {
-          font-size: 2rem;
+          font-size: 1.5rem;
           font-weight: 450;
         }
       }
 
       .cards {
         grid-area: cards;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 500px;
+        display: flex;
+        float: left;
+        width: 520px;
 
         .card {
-          width: 150px;
-          margin: 25px 30px;
+          width: 140px;
+          margin: 25px 20px;
           padding-top: 20px;
           border-radius: 30px;
           display: grid;
@@ -165,6 +178,15 @@ main {
           i,
           h3 {
             justify-self: center;
+          }
+
+          i {
+            font-size: 2rem;
+          }
+
+          h3 {
+            font-size: 0.75rem;
+            font-weight: 500;
           }
         }
       }
@@ -182,7 +204,7 @@ main {
       border-color: $secondary-color;
 
       h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 500;
         padding-bottom: 10px;
       }
@@ -193,6 +215,7 @@ main {
 
         i {
           margin: 10px;
+          font-size: 1.5rem;
         }
 
         h3 {
@@ -222,14 +245,20 @@ main {
 
     .list {
       display: grid;
-      grid-template-columns: repeat(3, 100px 300px);
+      grid-template-columns: repeat(3, 1fr 3fr);
       grid-row-gap: 40px;
       justify-content: center;
       padding: 50px 50px;
 
       h2 {
         font-weight: 600;
-        font-size: 1.75rem;
+        font-size: 1.25rem;
+      }
+
+      i {
+        font-size: 3rem;
+        justify-self: end;
+        padding-right: 20px;
       }
     }
 
@@ -265,7 +294,7 @@ main {
       text-decoration: none;
       background-color: $color-5;
       color: $primary-color;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
       padding: 15px 30px;
       border-radius: 15px;

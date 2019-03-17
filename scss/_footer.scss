@@ -6,11 +6,11 @@ footer {
   color: $color-3;
   padding-top: 75px;
   margin-bottom: 0;
-  position: fixed;
 
   display: grid;
-  grid-template-columns: 500px auto 500px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+  grid-column-gap: 20px;
 
   .about {
     grid-area: about;
@@ -22,7 +22,7 @@ footer {
     justify-self: center;
 
     img {
-      width: 400px;
+      width: 300px;
     }
   }
 

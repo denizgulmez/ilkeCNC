@@ -28,14 +28,14 @@ header {
         padding: 10px 30px; }
         header #banner .contact .email i,
         header #banner .contact .phone i {
-          font-size: 25px; }
+          font-size: 20px; }
         header #banner .contact .email h4,
         header #banner .contact .phone h4 {
           margin: 0;
           padding-left: 10px;
           padding-top: 5px;
           font-weight: 600;
-          font-size: 15px; }
+          font-size: 12px; }
       header #banner .contact .email i {
         color: #3a9fc0;
         margin-right: 5px; }
@@ -59,7 +59,7 @@ header {
     overflow: hidden;
     padding-left: 200px;
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 1fr 5fr;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
     header .menuDesktop .logo {
       padding-top: 7px;
@@ -68,14 +68,14 @@ header {
       border-width: 0 1px 0 0px;
       border-color: #2c444e; }
       header .menuDesktop .logo img {
-        width: 150px; }
+        width: 120px; }
     header .menuDesktop .menu-items a {
       float: left;
       height: 100%;
       color: #fcfff5;
-      padding: 40px 30px 15px 30px;
+      padding: 30px 30px 10px 30px;
       text-decoration: none;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 500;
       border-style: solid;
       border-width: 0 1px 0 0px;
@@ -92,10 +92,10 @@ footer {
   color: #d1dbbd;
   padding-top: 75px;
   margin-bottom: 0;
-  position: fixed;
   display: grid;
-  grid-template-columns: 500px auto 500px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+  grid-column-gap: 20px;
   grid-template-areas: "contact logo about" "copyright copyright copyright"; }
   footer .about {
     grid-area: about;
@@ -104,7 +104,7 @@ footer {
     grid-area: logo;
     justify-self: center; }
     footer .logo img {
-      width: 400px; }
+      width: 300px; }
   footer .contact {
     grid-area: contact;
     padding-left: 30%;
@@ -122,33 +122,154 @@ footer {
 #about .topping {
   width: 100%;
   height: 400px;
-  background-image: url(../img/imgSlide1.jpg);
+  background-image: url(../img/slide1.jpg);
   background-repeat: no-repeat;
   background-position: right top; }
 
 #about .liveArea {
+  padding-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 5fr; }
+  grid-template-columns: 1fr 3fr; }
   #about .liveArea .nav {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 100px 100px;
+    margin: 100px 25px 100px 100px;
     border-style: solid;
     border-width: 2px;
     border-color: #3e606f;
     border-radius: 10px;
-    width: 300px; }
+    width: 250px;
+    height: 260px; }
     #about .liveArea .nav a {
       text-decoration: none;
       color: #3e606f;
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: 600;
-      padding: 20px 10px;
+      padding: 30px 30px;
       border-style: solid;
       border-width: 0 0 2px 0;
       border-color: #3e606f; }
       #about .liveArea .nav a.bottom {
         border-width: 0; }
+      #about .liveArea .nav a.current {
+        background-color: #3e606f;
+        color: #fcfff5; }
+  #about .liveArea #content {
+    padding: 50px 50px; }
+    #about .liveArea #content h1 {
+      font-size: 1.5rem; }
+    #about .liveArea #content h2 {
+      font-weight: 500;
+      font-size: 1rem; }
+    #about .liveArea #content.company {
+      padding-right: 30%; }
+    #about .liveArea #content.policy {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      #about .liveArea #content.policy .vision,
+      #about .liveArea #content.policy .mission {
+        padding: 0 50px; }
+      #about .liveArea #content.policy .mission {
+        border-style: solid;
+        border-color: #3e606f;
+        border-width: 0 0 0 2px; }
+    #about .liveArea #content.quality {
+      display: grid;
+      grid-template-columns: 1fr 2fr; }
+      #about .liveArea #content.quality .statement,
+      #about .liveArea #content.quality .bulletins {
+        padding: 0 20px; }
+      #about .liveArea #content.quality .bulletins {
+        display: grid;
+        grid-template-columns: 1fr 3fr; }
+        #about .liveArea #content.quality .bulletins i {
+          padding-top: 15px;
+          padding-right: 20px;
+          justify-self: end;
+          font-size: 2rem; }
+
+#about .services h1 {
+  color: #3e606f; }
+
+#servicePage .topping {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/imgSlide1.jpg);
+  background-repeat: no-repeat;
+  background-position: right top; }
+
+#servicePage .liveArea {
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "heading heading" "services capacity"; }
+  #servicePage .liveArea .heading {
+    grid-area: heading; }
+    #servicePage .liveArea .heading h1 {
+      color: #3e606f;
+      font-size: 2rem; }
+  #servicePage .liveArea .services {
+    grid-area: services;
+    padding: 50px 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #servicePage .liveArea .services .box {
+      background-color: #3e606f;
+      color: #fcfff5;
+      width: 110px;
+      height: 110px;
+      justify-self: center;
+      align-self: center;
+      border-radius: 20px; }
+      #servicePage .liveArea .services .box h2 {
+        align-self: center;
+        justify-self: center;
+        padding: 20px 10px 20px 20px;
+        font-weight: 500;
+        font-size: 1rem; }
+  #servicePage .liveArea .capacity {
+    grid-area: capacity;
+    padding-left: 50px;
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    border-color: #3e606f; }
+    #servicePage .liveArea .capacity h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding-bottom: 10px; }
+    #servicePage .liveArea .capacity .list {
+      display: grid;
+      grid-template-columns: 1fr 8fr; }
+      #servicePage .liveArea .capacity .list i {
+        margin: 10px;
+        font-size: 1.5rem; }
+      #servicePage .liveArea .capacity .list h3 {
+        margin: 15px;
+        font-size: 1rem;
+        font-weight: 500; }
+
+#contactPage .topping {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/imgSlide1.jpg);
+  background-repeat: no-repeat;
+  background-position: right top; }
+
+#contactPage .liveArea {
+  padding-bottom: 00px; }
+  #contactPage .liveArea .heading {
+    color: #3e606f; }
+  #contactPage .liveArea .contact {
+    padding: 50px 200px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 75px auto; }
+    #contactPage .liveArea .contact i {
+      align-self: center;
+      padding-bottom: 30px; }
+  #contactPage .liveArea #map {
+    width: 100%;
+    height: 400px; }
 
 * {
   box-sizing: border-box; }
@@ -162,21 +283,22 @@ body {
   line-height: 1.5; }
 
 main #slide .imgSlide {
-  width: 100%; }
+  width: 100%;
+  padding-top: 50px; }
 
 main #intro {
   padding: 20px 150px;
   padding-bottom: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 100px;
+  grid-column-gap: 50px;
   grid-template-areas: "slogan slogan slogan" "card1 card2 card3"; }
   main #intro .slogan {
     grid-area: slogan;
     justify-self: center;
     padding-bottom: 50px; }
     main #intro .slogan h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 600; }
   main #intro .card1 {
     grid-area: card1; }
@@ -186,20 +308,24 @@ main #intro {
     grid-area: card3; }
   main #intro #card {
     display: grid;
-    grid-template-columns: 1fr 3fr; }
+    grid-template-columns: 1fr 2fr; }
     main #intro #card i {
-      padding-top: 50px; }
+      padding-top: 50px;
+      padding-right: 30px;
+      font-size: 3rem;
+      justify-self: end; }
     main #intro #card h2 {
-      font-size: 1.75rem;
+      font-size: 1.25rem;
       font-weight: 700; }
     main #intro #card h3 {
-      font-weight: 500; }
+      font-weight: 500;
+      font-size: 1rem; }
 
 main .heading {
   color: #fcfff5;
   padding-left: 50px; }
   main .heading h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500; }
 
 main #products {
@@ -209,6 +335,10 @@ main #products {
   background-color: #3e606f; }
   main #products .carousel img {
     width: 80%; }
+  main #products.bottom {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #fcfff5; }
 
 main #company {
   width: 100%;
@@ -222,13 +352,13 @@ main #company {
     grid-area: heading; }
   main #company .info {
     grid-area: info;
-    padding-left: 200px; }
+    padding-left: 100px; }
     main #company .info h2 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 450;
       padding-right: 200px; }
     main #company .info .button {
-      padding: 20px; }
+      padding: 30px; }
       main #company .info .button a {
         padding: 15px 30px;
         border-radius: 15px; }
@@ -241,16 +371,16 @@ main #company {
     main #company .fields .headingSm {
       grid-area: headingSm; }
       main #company .fields .headingSm h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 450; }
     main #company .fields .cards {
       grid-area: cards;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      width: 500px; }
+      display: flex;
+      float: left;
+      width: 520px; }
       main #company .fields .cards .card {
-        width: 150px;
-        margin: 25px 30px;
+        width: 140px;
+        margin: 25px 20px;
         padding-top: 20px;
         border-radius: 30px;
         display: grid;
@@ -260,6 +390,11 @@ main #company {
         main #company .fields .cards .card i,
         main #company .fields .cards .card h3 {
           justify-self: center; }
+        main #company .fields .cards .card i {
+          font-size: 2rem; }
+        main #company .fields .cards .card h3 {
+          font-size: 0.75rem;
+          font-weight: 500; }
   main #company .capacity {
     grid-area: capacity;
     padding-left: 50px;
@@ -267,14 +402,15 @@ main #company {
     border-width: 0 0 0 2px;
     border-color: #3e606f; }
     main #company .capacity h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 500;
       padding-bottom: 10px; }
     main #company .capacity .list {
       display: grid;
       grid-template-columns: 1fr 8fr; }
       main #company .capacity .list i {
-        margin: 10px; }
+        margin: 10px;
+        font-size: 1.5rem; }
       main #company .capacity .list h3 {
         margin: 15px;
         font-size: 1rem;
@@ -290,13 +426,17 @@ main #services {
   padding-bottom: 50px; }
   main #services .list {
     display: grid;
-    grid-template-columns: repeat(3, 100px 300px);
+    grid-template-columns: repeat(3, 1fr 3fr);
     grid-row-gap: 40px;
     justify-content: center;
     padding: 50px 50px; }
     main #services .list h2 {
       font-weight: 600;
-      font-size: 1.75rem; }
+      font-size: 1.25rem; }
+    main #services .list i {
+      font-size: 3rem;
+      justify-self: end;
+      padding-right: 20px; }
   main #services .button {
     padding: 20px 100px; }
 
@@ -319,7 +459,7 @@ main .button {
     text-decoration: none;
     background-color: #f25652;
     color: #fcfff5;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 15px 30px;
     border-radius: 15px;
