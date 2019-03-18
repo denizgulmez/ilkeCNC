@@ -1,3 +1,25 @@
+// Mobile Menu Show/Hide
+const menuBtn = document.querySelector(".menuButton");
+const menuItems = document.querySelector(".menuItems");
+
+let showMenu = false;
+
+menuBtn.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  if (!showMenu) {
+    menuBtn.classList.add("close");
+    menuItems.classList.add("show");
+
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove("close");
+    menuItems.classList.remove("show");
+
+    showMenu = false;
+  }
+}
+
 // Main Page Carousel
 $(".slide").slick({
   dots: true,
@@ -22,7 +44,7 @@ $(document).ready(function() {
           arrows: false,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 3
+          slidesToShow: 1
         }
       },
       {

@@ -114,7 +114,7 @@ main {
 
   #company {
     width: 100%;
-    padding: 50px 100px;
+    padding: 50px 15%;
     padding-bottom: 50px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -126,12 +126,13 @@ main {
 
     .info {
       grid-area: info;
-      padding-left: 100px;
+      padding-right: 10%;
 
       h2 {
         font-size: 1.25rem;
         font-weight: 450;
         padding-right: 200px;
+        padding-bottom: 50px;
       }
 
       .button {
@@ -142,58 +143,6 @@ main {
           border-radius: 15px;
         }
       }
-    }
-
-    .fields {
-      grid-area: fields;
-      padding-left: 50px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      .headingSm {
-        grid-area: headingSm;
-
-        h2 {
-          font-size: 1.5rem;
-          font-weight: 450;
-        }
-      }
-
-      .cards {
-        grid-area: cards;
-        display: flex;
-        float: left;
-        width: 520px;
-
-        .card {
-          width: 140px;
-          margin: 25px 20px;
-          padding-top: 20px;
-          border-radius: 30px;
-          display: grid;
-          grid-template-columns: 1fr;
-          background-color: $secondary-color;
-          color: $primary-color;
-
-          i,
-          h3 {
-            justify-self: center;
-          }
-
-          i {
-            font-size: 2rem;
-          }
-
-          h3 {
-            font-size: 0.75rem;
-            font-weight: 500;
-          }
-        }
-      }
-
-      grid-template-areas:
-        "headingSm headingSm"
-        "cards cards";
     }
 
     .capacity {
@@ -229,7 +178,7 @@ main {
     grid-template-areas:
       "heading heading"
       "info capacity"
-      "fields capacity";
+      "info capacity";
 
     h1 {
       color: $secondary-color;
@@ -248,7 +197,7 @@ main {
       grid-template-columns: repeat(3, 1fr 3fr);
       grid-row-gap: 40px;
       justify-content: center;
-      padding: 50px 50px;
+      padding: 30px 10%;
 
       h2 {
         font-weight: 600;
@@ -263,7 +212,7 @@ main {
     }
 
     .button {
-      padding: 20px 100px;
+      padding: 20px 0px;
     }
   }
 
