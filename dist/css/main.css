@@ -139,7 +139,7 @@ header {
   header .menuItems {
     display: none; }
     header .menuItems.show {
-      display: grid;
+      display: grid !important;
       grid-template-columns: 1fr;
       padding: 10px 15%;
       padding-bottom: 50px; }
@@ -356,9 +356,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
 
-main #slide .imgSlide {
-  width: 100%;
-  padding-top: 50px; }
+main #slide {
+  padding-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%; }
+  main #slide .imgSlide {
+    width: 100%; }
 
 main #intro {
   padding: 20px 150px;
@@ -507,7 +510,7 @@ main .button {
     border-radius: 15px;
     transition: all 0.5s ease-out; }
     main .button a:hover {
-      font-size: 2.5rem;
+      font-size: 2rem;
       transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1024px) {
@@ -520,7 +523,8 @@ main .button {
   header .menuDesktop {
     display: none !important; }
   main {
-    width: 100% !important; }
+    width: 100% !important;
+    margin-top: 80px; }
     main h1 {
       font-size: 1.75rem !important; }
     main #intro {

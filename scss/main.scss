@@ -20,9 +20,13 @@ body {
 
 main {
   #slide {
+    padding-top: 50px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
     .imgSlide {
       width: 100%;
-      padding-top: 50px;
     }
   }
 
@@ -250,7 +254,7 @@ main {
       @include easeOut();
 
       &:hover {
-        font-size: 2.5rem;
+        font-size: 2rem;
         @include easeOut();
       }
     }
