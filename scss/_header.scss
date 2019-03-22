@@ -5,30 +5,42 @@ header {
 
   #banner {
     display: grid;
-    grid-template-columns: auto 200px;
-    padding-left: 15%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    grid-template-columns: 200px auto 100px;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: $primary-color;
+
+    .logo {
+      padding-top: 7px;
+      padding-bottom: 0px;
+
+      img {
+        width: 150px;
+      }
+    }
 
     .contact {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 50px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
       justify-self: left;
       align-self: center;
-      padding-left: 100px;
+      padding-left: 0px;
 
       .email,
-      .phone {
+      .phone,
+      .address {
         display: flex;
         flex-direction: row;
-        border-style: solid;
+        border-style: none;
         border-width: 2px;
         border-color: $secondary-color;
-        border-radius: 10px;
-        line-height: 1;
+        border-radius: 15px;
+        line-height: 1.5;
         padding: 10px 30px;
+        align-items: center;
+        justify-self: center;
 
         i {
           font-size: 20px;
@@ -55,23 +67,35 @@ header {
           color: green;
         }
       }
+
+      .address {
+        i {
+          color: orangered;
+        }
+      }
     }
 
     .lang {
       display: flex;
       align-self: center;
       padding-bottom: 5px;
+      padding-left: 10px;
 
       a {
         text-decoration: none;
         color: $color-4;
         font-size: 15px;
+        align-self: center;
+
+        img {
+          height: 20px;
+        }
       }
 
       .verticalLine {
         margin: 0 6px 0 7px;
         width: 2px;
-        height: 25px;
+        height: 20px;
         background-color: $color-4;
       }
     }
@@ -80,22 +104,9 @@ header {
   .menuDesktop {
     background-color: $secondary-color;
     overflow: hidden;
-    padding-left: 200px;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    padding-left: 250px;
+
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
-    .logo {
-      padding-top: 7px;
-      padding-bottom: 0px;
-      border-style: solid;
-      border-width: 0 1px 0 0px;
-      border-color: darken($secondary-color, 10);
-
-      img {
-        width: 120px;
-      }
-    }
 
     .menu-items {
       a {
@@ -103,14 +114,20 @@ header {
         height: 100%;
         color: $primary-color;
 
-        padding: 30px 30px 10px 30px;
+        padding: 10px 30px 10px 30px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
 
         border-style: solid;
         border-width: 0 1px 0 0px;
         border-color: darken($secondary-color, 10);
+
+        &.first {
+          border-style: solid;
+          border-width: 0 1px 0 1px;
+          border-color: darken($secondary-color, 10);
+        }
 
         &:hover {
           background-color: darken($secondary-color, 10);

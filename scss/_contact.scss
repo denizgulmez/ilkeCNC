@@ -1,20 +1,16 @@
 #contactPage {
-  .topping {
-    width: 100%;
-    height: 400px;
-    background-color: lightblue;
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
-
   .liveArea {
-    padding-bottom: 00px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     .heading {
+      grid-area: heading;
       color: $secondary-color;
     }
 
     .contact {
+      grid-area: contact;
       padding: 50px 200px;
 
       display: grid;
@@ -24,11 +20,20 @@
         align-self: center;
         padding-bottom: 30px;
       }
+
+      h3 {
+        font-weight: 500;
+      }
     }
 
     #map {
+      grid-area: map;
       width: 100%;
       height: 400px;
     }
+
+    grid-template-areas:
+      "heading map"
+      "contact map";
   }
 }

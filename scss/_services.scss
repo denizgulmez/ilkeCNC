@@ -1,12 +1,4 @@
 #servicePage {
-  .topping {
-    width: 100%;
-    height: 400px;
-    background-color: lightblue;
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
-
   .liveArea {
     padding-bottom: 100px;
     display: grid;
@@ -24,6 +16,7 @@
     .services {
       grid-area: services;
       padding: 50px 20%;
+      padding-top: 00px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
 
@@ -41,7 +34,7 @@
         h2 {
           align-self: center;
           justify-self: center;
-          padding: 20px 10px 20px 20px;
+          padding: 5px 10px 5px 20px;
           font-weight: 500;
           font-size: 1rem;
         }
@@ -79,7 +72,30 @@
     }
 
     grid-template-areas:
-      "heading heading"
+      "heading capacity"
       "services capacity";
+
+    &.products {
+      grid-template-areas:
+        "heading heading"
+        "imgProduct imgProduct";
+    }
+
+    .imgProduct {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 10%;
+      padding-right: 0%;
+      justify-items: center;
+
+      img {
+        width: 600px;
+        padding: 30px 10px;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
   }
 }

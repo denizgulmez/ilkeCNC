@@ -33,6 +33,11 @@ footer {
 
     display: grid;
     grid-template-columns: 50px auto;
+
+    i {
+      font-size: 1.5rem;
+      padding-top: 12px;
+    }
   }
 
   .copyright {
@@ -48,5 +53,6 @@ footer {
 
   h4 {
     font-weight: 500;
+    font-size: 0.75rem;
   }
 }

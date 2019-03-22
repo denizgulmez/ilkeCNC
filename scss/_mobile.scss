@@ -26,6 +26,16 @@
       font-size: 1.75rem !important;
     }
 
+    .topping {
+      height: 20px !important;
+    }
+
+    #slide {
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 20px;
+    }
+
     #intro {
       padding: 20px 10% !important;
       grid-template-columns: 1fr;
@@ -168,10 +178,12 @@
           padding: 0 20px !important;
         }
       }
+    }
+  }
 
-      &.quality {
-        grid-template-columns: 1fr !important;
-      }
+  #quality {
+    .quality {
+      grid-template-columns: 1fr !important;
     }
   }
 
@@ -207,6 +219,16 @@
         border-style: none !important;
       }
     }
+
+    .products {
+      .imgProduct {
+        grid-template-columns: 1fr;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
   }
 
   #contactPage {
@@ -227,6 +249,11 @@
           font-size: 1.75rem;
         }
       }
+
+      grid-template-areas:
+        "heading heading"
+        "contact contact"
+        "map map";
     }
   }
 }
