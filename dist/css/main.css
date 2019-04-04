@@ -372,7 +372,7 @@ footer {
   padding-bottom: 100px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-areas: "heading capacity" "services capacity"; }
+  grid-template-areas: "heading capacity" "services capacity" "mach mach"; }
   #servicePage .liveArea .heading {
     grid-area: heading; }
     #servicePage .liveArea .heading h1 {
@@ -420,6 +420,15 @@ footer {
         margin: 15px;
         font-size: 1rem;
         font-weight: 500; }
+  #servicePage .liveArea .mach {
+    grid-area: mach;
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+    #servicePage .liveArea .mach img {
+      width: 80%;
+      padding: 30px; }
   #servicePage .liveArea.products {
     grid-template-areas: "heading heading" "imgProduct imgProduct"; }
   #servicePage .liveArea .imgProduct {
@@ -613,6 +622,8 @@ main {
     grid-column-gap: 50px; }
     main #contact .heading {
       color: #3e606f; }
+      main #contact .heading h1 {
+        font-weight: 700; }
     main #contact .button a {
       padding: 25px 40px;
       border-radius: 20px; }
@@ -794,7 +805,7 @@ main {
     height: 30vh; }
   #servicePage .liveArea {
     grid-template-columns: 1fr !important;
-    grid-template-areas: "heading" "services" "capacity" !important; }
+    grid-template-areas: "heading" "services" "capacity" "mach" !important; }
     #servicePage .liveArea .services {
       grid-template-columns: 1fr 1fr !important;
       grid-column-gap: 20px;
@@ -807,6 +818,10 @@ main {
           text-align: center; }
     #servicePage .liveArea .capacity {
       border-style: none !important; }
+    #servicePage .liveArea .mach {
+      grid-template-columns: 1fr !important; }
+      #servicePage .liveArea .mach img {
+        width: 100% !important; }
   #servicePage .products .imgProduct {
     grid-template-columns: 1fr; }
     #servicePage .products .imgProduct img {

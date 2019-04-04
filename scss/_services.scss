@@ -71,9 +71,23 @@
       }
     }
 
+    .mach {
+      grid-area: mach;
+      padding: 50px 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+
+      img {
+        width: 80%;
+        padding: 30px;
+      }
+    }
+
     grid-template-areas:
       "heading capacity"
-      "services capacity";
+      "services capacity"
+      "mach mach";
 
     &.products {
       grid-template-areas:

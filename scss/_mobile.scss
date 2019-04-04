@@ -197,7 +197,8 @@
       grid-template-areas:
         "heading"
         "services"
-        "capacity" !important;
+        "capacity"
+        "mach" !important;
 
       .services {
         grid-template-columns: 1fr 1fr !important;
@@ -217,6 +218,14 @@
 
       .capacity {
         border-style: none !important;
+      }
+
+      .mach {
+        grid-template-columns: 1fr !important;
+
+        img {
+          width: 100% !important;
+        }
       }
     }
 
